@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Projects from '../components/Projects'
 import Info from '../components/Info'
-import Contact from '../components/Contact'
 import Head from 'next/head'
-import Link from 'next/link'
+
+import Grid from "../styles/grid.module.css"
 
 const Home: NextPage = () => {
   return (
@@ -14,36 +14,44 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section>
-        <h2>
-          Home
-        </h2>
-        <p>
-          It will be like his home section
-          https://klasik.studio/
+      <h2>
+        Home
+      </h2>
+      <section className={Grid.homeGrid}>
+
+        <a href="#">
+          D
+        </a>
+
+
+        <span> Software Engineer Fullstack </span>
+
+        <a href="#">
+          Work
+        </a>
+
+        <p className={Grid.columnGridSpan2}>
+          Douglas Felizardo
         </p>
+
+        <div>
+          <a target="_blank" href="https://www.linkedin.com/in/douglasliralima/" rel="noopener noreferrer">
+            Linkedin
+          </a>
+          <br />
+          <a target="_blank" href="https://github.com/douglasliralima" rel="noopener noreferrer">
+            Github
+          </a>
+        </div>
+
+        <a href="#">
+          About
+        </a>
+
+        <span> Blog </span>
 
         <a href="mailto:douglasliralima@gmail.com">
           Contact
-        </a>
-
-        <br/><br/>
-       
-       <span>Software Engineer Fullstack</span>
-        <p>Douglas</p>
-        <p>Felizardo</p>
-        <p>
-          I really enjoy coding, from client or server side with python or JavaScript,
-        </p>
-
-        <br />
-        <a target="_blank" href="https://www.linkedin.com/in/douglasliralima/" rel="noopener noreferrer">
-          Linkedin
-        </a>
-
-        <br />
-        <a target="_blank" href="https://github.com/douglasliralima" rel="noopener noreferrer">
-          Github
         </a>
       </section>
 
