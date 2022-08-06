@@ -1,9 +1,0 @@
-.homeGrid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: Repeat(3, 1fr);
-}
-
-.columnGridSpan2 {
-    grid-column: span 2;
-}
