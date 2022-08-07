@@ -24,3 +24,17 @@ div#__next,
 div#__next>div {
   height: 100%;
 }
+
+@font-face {
+  font-family: 'Meraki';
+  src: url('../asset/meraki/Meraki.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Morguns';
+  src: url('../asset/morguns/Morguns-Condensed.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
