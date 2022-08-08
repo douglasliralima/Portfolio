@@ -10,7 +10,7 @@ import Footer from '../components/Footer/Footer';
 
 const Home: NextPage = () => {
   return (
-    <div style={{ marginTop: "5px" }}>
+    <div>
       <Head>
         <title>Douglas Felizardo</title>
         <meta name="description" content="Portfolio created by Douglas Felizardo" />
