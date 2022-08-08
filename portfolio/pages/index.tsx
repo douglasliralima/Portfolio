@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Portfolio created by Douglas Felizardo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className={styles.blackPage} />
       <div className={styles.home} style={{ height: "100%" }}>
         <Header />
         <div className='body' style={{ marginLeft: "20px" }}>
