@@ -36,17 +36,3 @@
         transform: translateY(-100%);
     }
 }
-
-
-@keyframes initial-transition2 {
-
-    50% {
-        left: 50%;
-        opacity: 0;
-    }
-
-    100% {
-        left: 80%;
-        opacity: 1;
-    }
-}
