@@ -23,7 +23,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    animation: initial-transition 800ms ease-out forwards 200ms;
+    animation: initial-transition 800ms ease-in-out forwards 200ms;
     background-color: #121212;
 }
 
