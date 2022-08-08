@@ -1,11 +1,13 @@
 .footer {
     display: flex;
+    width: 100%;
+    background-color: #121212;
+    color: #ffffffe0;
 }
 
 .footerOrigin {
     margin-left: 20px;
     white-space: nowrap;
-    width: auto;
 }
 
 .socialNetwork {
