@@ -1,3 +1,9 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .name1 {
     font-family: Morguns, sans-serif;
     font-size: 15rem;
