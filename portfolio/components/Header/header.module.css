@@ -16,3 +16,18 @@
     white-space: nowrap;
     width: auto;
 }
+
+.header p {
+    opacity: 0;
+    animation: thanos-typography 400ms ease-in-out forwards 1250ms;
+}
+
+@keyframes thanos-typography {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
