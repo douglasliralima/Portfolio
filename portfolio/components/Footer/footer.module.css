@@ -4,7 +4,7 @@
     background-color: #121212;
     color: #ffffffe0;
     transform: translateY(100%);
-    animation: footer-up 250ms ease-out forwards 1000ms;
+    animation: footer-up 250ms ease-out forwards 800ms;
 }
 
 .footerOrigin {
@@ -22,7 +22,7 @@
 
 .footer p {
     opacity: 0;
-    animation: thanos-typography 400ms ease-in-out forwards 1250ms;
+    animation: thanos-typography 400ms ease-out forwards 1050ms;
 }
 
 @keyframes thanos-typography {

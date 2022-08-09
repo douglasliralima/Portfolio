@@ -19,7 +19,7 @@
 
 .header p {
     opacity: 0;
-    animation: thanos-typography 400ms ease-in-out forwards 1250ms;
+    animation: thanos-typography 400ms ease-in-out forwards 800ms;
 }
 
 @keyframes thanos-typography {
