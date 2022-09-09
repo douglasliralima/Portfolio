@@ -27,7 +27,7 @@
 
 .underliningMainAnimation {
     height: 2px;
-    animation: underlining 1500ms forwards 1500ms;
+    animation: underlining 1800ms forwards 1500ms;
     position: relative;
     background: #121212;
     width: 0%;
