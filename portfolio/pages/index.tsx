@@ -15,6 +15,9 @@ const Home: NextPage = () => {
         <title>Douglas Felizardo</title>
         <meta name="description" content="Portfolio created by Douglas Felizardo" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <div className={styles.blackPage} />
       <div className={styles.home} style={{ height: "100%" }}>

@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Tiro Telugu', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #fff;
   color: #130b00;
 }
@@ -24,6 +23,11 @@ div#__next,
 div#__next>div {
   height: 100%;
   width: 100%;
+}
+
+@font-face {
+  font-family: 'Alvarado';
+  src: url('../asset/alvarado/fonts/Variable/AlvaradoVar.ttf');
 }
 
 @font-face {
