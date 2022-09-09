@@ -2,14 +2,35 @@ import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 import headerStyles from "./header.module.css"
 
-const Underline = (props: { title: string, active: boolean }) => {
+const Underline = (props: { title: string, active?: boolean }) => {
     const { title, active } = props;
     const underlineContainer = React.createRef<HTMLAnchorElement>();
-    const [underlineAnimation, setUnderlineAnimation] = useState(active)
+    const [underlineAnimation, setUnderlineAnimation] = useState(false)
 
     const [underlineContainerState, setUnderlineContainerState] = useState(underlineContainer.current)
 
     useEffect(() => setUnderlineContainerState(underlineContainer.current), [underlineContainer])
+
+    const underline = () => {
+        if (active) {
+            return <div
+                className={headerStyles.underliningMainAnimation}
+                style={
+                    {
+                        maxWidth: underlineContainerState?.clientWidth,
+                    }
+                } />
+        }
+        if (!active && underlineAnimation) {
+            return <div
+                className={headerStyles.underliningOnMousePassAnimation}
+                style={
+                    {
+                        maxWidth: underlineContainerState?.clientWidth,
+                    }
+                } />
+        }
+    }
 
     return <p>
         <a href="#" ref={underlineContainer}
@@ -17,19 +38,14 @@ const Underline = (props: { title: string, active: boolean }) => {
             onMouseEnter={() => {
                 setUnderlineAnimation(true)
             }}
+            onMouseLeave={() => {
+                setUnderlineAnimation(false)
+            }}
         >
             {title}
-            <div
-                className={`${headerStyles.underlined} ${underlineAnimation && headerStyles.underliningAnimation}`}
-                style={
-                    {
-                        maxWidth: underlineContainerState?.clientWidth,
-                    }
-                } />
+            {underline()}
         </a>
     </p>
-
-
 }
 
 const Header = () => {
@@ -40,9 +56,9 @@ const Header = () => {
         </div>
 
         <div className={headerStyles.navSection}>
-            <p>WORK</p>
-            <p>ABOUT</p>
-            <p>BLOG</p>
+            <Underline title="WORK" />
+            <Underline title="ABOUT" />
+            <Underline title="BLOG" />
         </div>
     </div >
 }

@@ -25,22 +25,32 @@
     font-size: 1.2rem;
 }
 
-.underliningAnimation {
-    animation: underlining 2000ms forwards 1000ms;
+.underliningMainAnimation {
+    height: 2px;
+    animation: underlining 1500ms forwards 1500ms;
+    position: relative;
+    background: #121212;
     width: 0%;
-    border: 1px solid #121212;
+}
+
+.underliningOnMousePassAnimation {
+    height: 2px;
+    animation: underlining 1000ms forwards;
+    position: relative;
+    background: #121212;
+    width: 0%;
 }
 
 @keyframes underlining {
     0% {
+        left: 100%;
         width: 0%;
-        transform: translateY(1000);
-
     }
 
+
     100% {
+        left: 0%;
         width: 100%;
-        border: 1px solid #121212;
     }
 }
 
