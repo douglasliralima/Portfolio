@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 import headerStyles from "./header.module.css"
 
-const Underline = (props: { title: string, active?: boolean }) => {
+const Underline = (props: { title?: string, active?: boolean }) => {
     const { title, active } = props;
     const underlineContainer = React.createRef<HTMLAnchorElement>();
     const [underlineAnimation, setUnderlineAnimation] = useState(false)
@@ -42,7 +43,9 @@ const Underline = (props: { title: string, active?: boolean }) => {
                 setUnderlineAnimation(false)
             }}
         >
-            {title}
+            <Link href={title ? title.toLocaleLowerCase() : '/'} passHref>
+                {title ?? "DOUGLAS LIMA"}
+            </Link>
             {underline()}
         </a>
     </p>
@@ -52,7 +55,7 @@ const Header = () => {
 
     return < div className={headerStyles.header} >
         <div className={headerStyles.name}>
-            <Underline title="DOUGLAS LIMA" active={true} />
+            <Underline active={true} />
         </div>
 
         <div className={headerStyles.navSection}>

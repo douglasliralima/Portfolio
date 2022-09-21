@@ -43,3 +43,24 @@ div#__next>div {
   font-weight: 400;
   font-style: normal;
 }
+
+.black-page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation: initial-transition 500ms forwards 250ms;
+  background-color: #121212;
+}
+
+@keyframes initial-transition {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
